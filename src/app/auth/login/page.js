@@ -1,3 +1,4 @@
+import BreadCrumb from "@/app/components/BreadCrumb";
 import Login from "./Login";
 
 export const metadata = {
@@ -6,11 +7,27 @@ export const metadata = {
 };
 
 function loginPage() {
-    return (
-        <>
-        <Login />
-        </>
-    );
+  const breadCrumbList = [
+    {
+      to: "/",
+      text: "Home / ",
+    },
+    {
+      to: "/",
+      text: "pages / ",
+    },
+    {
+      to: "#",
+      text: "login",
+      style: "font-bold text-black cursor-default",
+    },
+  ];
+  return (
+    <>
+      <BreadCrumb list={breadCrumbList} />
+      <Login />
+    </>
+  );
 }
 
 export default loginPage;

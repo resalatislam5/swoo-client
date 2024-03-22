@@ -16,3 +16,5 @@ body{
 .dropdown:hover .dropdown-content-h{
   display: none;
 }
+/* bdsfj */
+#menu-footer-menu .f_sep:last-child{display:none}

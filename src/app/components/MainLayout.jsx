@@ -6,7 +6,7 @@ function MainLayout({ children }) {
     <main>
       <Header />
       <Search />
-      <div className="container mx-auto px-5">{children}</div>
+      {children}
     </main>
   );
 }
