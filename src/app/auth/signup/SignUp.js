@@ -2,8 +2,13 @@
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import AuthLayout from "../AuthLayout";
 
-function Login() {
+function SignUp() {
   const inputList = [
+    {
+      text: "Your Name",
+      type: "email",
+      placeholder: "Jhon Deo",
+    },
     {
       text: "Email Address",
       type: "email",
@@ -16,6 +21,13 @@ function Login() {
       eyse: <FaRegEye />,
       eyseH: <FaRegEyeSlash />,
     },
+    {
+      text: "Confirm Password",
+      type: "password",
+      placeholder: "...",
+      eyse: <FaRegEye />,
+      eyseH: <FaRegEyeSlash />,
+    },
   ];
   const handelSubmit = (e) => {
     e.preventDefault();
@@ -23,18 +35,17 @@ function Login() {
   return (
     <div>
       <AuthLayout
-        heading="Welcome Back"
-        subHeading="LOGIN TO CONTINUE"
+        heading="Register"
+        subHeading="JOIN TO US"
         handelSubmit={handelSubmit}
         inputList={inputList}
-        to={"/auth/signup"}
-        toText="Sign Up"
+        to={"/auth/login"}
+        toText="Login"
+        buttonText="Register"
         toText1="new user ? "
-        forget="Forget Password ?"
-        buttonText="LOGIN"
       />
     </div>
   );
 }
 
-export default Login;
+export default SignUp;

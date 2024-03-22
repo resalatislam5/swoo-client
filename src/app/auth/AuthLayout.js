@@ -4,13 +4,23 @@ import loginImg from "@/app/ass/login.png";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import { useState } from "react";
 
-function AuthLayout({heading, subHeading, inputList, handelSubmit, to, toText, toText1, forget}) {
+function AuthLayout({
+  heading,
+  subHeading,
+  inputList,
+  handelSubmit,
+  to,
+  toText,
+  toText1,
+  forget,
+  buttonText,
+}) {
   const [showP, setShowP] = useState(false);
   return (
     <div className="container mx-auto bg-white rounded-xl my-5 py-10 text-[#666]">
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-5">
-        <div className="flex justify-center gap-5">
-          <Image src={loginImg} alt="" />
+        <div className="flex justify-center gap-5 items-center">
+          <Image className="h-fit" src={loginImg} alt="" />
         </div>
         <div className="flex flex-col gap-10 max-[1023px]:items-center">
           <div className="">
@@ -45,7 +55,7 @@ function AuthLayout({heading, subHeading, inputList, handelSubmit, to, toText, t
                 className="bg-[#1ABA1A] text-white px-10 py-3 rounded-md"
                 type="submit"
               >
-                LOGIN
+                {buttonText}
               </button>
               <p className="mt-4 uppercase">
                 {toText1}
