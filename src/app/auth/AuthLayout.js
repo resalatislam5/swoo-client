@@ -3,6 +3,7 @@ import Image from "next/image";
 import loginImg from "@/app/ass/login.png";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import { useState } from "react";
+import Link from "next/link";
 
 function AuthLayout({
   heading,
@@ -46,9 +47,9 @@ function AuthLayout({
                   </div>
                 </div>
               ))}
-              <a href="" className="text-[13px] decoration-solid">
+              <Link href="/" className="text-[13px] decoration-solid">
                 {forget}
-              </a>
+              </Link>
             </div>
             <div className="mt-10">
               <button
@@ -59,9 +60,9 @@ function AuthLayout({
               </button>
               <p className="mt-4 uppercase">
                 {toText1}
-                <a className="text-[#1ABA1A]" href={to}>
+                <Link className="text-[#1ABA1A]" href={to}>
                   {toText}
-                </a>
+                </Link>
               </p>
             </div>
           </form>

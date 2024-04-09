@@ -223,19 +223,17 @@ function Header() {
             <a className="bg-gray-300 p-3 rounded-full" href="">
               <GiSelfLove />
             </a>
-            <div className="flex gap-2">
+            <Link href={"/auth/login"} className="flex gap-2">
               <div className="bg-gray-300 w-10 h-10 rounded-full flex justify-center items-center">
                 <FaUser />
               </div>
               <div className="md:flex hidden flex-col">
                 <p className="text-[11px] text-[#666]">welcome</p>
-                <Link className="font-bold" href={"/"}>
-                  Log in / Register
-                </Link>
+                <p className="font-bold">Log in / Register</p>
               </div>
-            </div>
+            </Link>
 
-            <div className="flex gap-2">
+            <Link href={"/cart"} className="flex gap-2">
               <div
                 className={`bg-gray-300 w-10 h-10 rounded-full relative ${
                   openNav ? "hidden" : ""
@@ -250,9 +248,7 @@ function Header() {
               </div>
               <div className="md:flex hidden flex-col">
                 <p className="text-[11px] text-[#666]">CART</p>
-                <Link className="font-bold" href={"/"}>
-                  $1,689.00
-                </Link>
+                <p className="font-bold">$1,689.00</p>
               </div>
               {/* sidebar-button-start */}
               <div>
@@ -284,7 +280,7 @@ function Header() {
                 </button>
               </div>
               {/* sidebar-button-end */}
-            </div>
+            </Link>
           </div>
         </div>
         {/* main header end */}
