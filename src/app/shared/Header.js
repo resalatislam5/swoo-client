@@ -78,7 +78,7 @@ function Header() {
           id="mySidenav"
           className={`${
             openNav
-              ? `w-full fixed bg-white h-full transition-all`
+              ? `w-full fixed z-20 bg-white h-full transition-all`
               : "hidden top-0"
           }`}
         >
@@ -134,9 +134,9 @@ function Header() {
         </div>
       </>
       {/* side bar start */}
-      <section className="container mx-auto bg-white px-5 text-black pt-7 rounded-xl relative">
+      <section className="container mx-auto bg-white px-5 text-black md:pt-7 rounded-xl relative">
         {/* top header start */}
-        <div className="flex flex-wrap md:justify-between gap-5 justify-center">
+        <div className="md:flex hidden flex-wrap md:justify-between gap-5 justify-center">
           <div className="flex items-center gap-5 text-xs">
             <p className="bg-[#EBEEF6] px-4 py-1 rounded-md">Hotline 24/7</p>
             <a className="font-bold" href="tel:+8801765975545">
@@ -164,7 +164,11 @@ function Header() {
         </div>
         {/* top header end */}
         {/* main header start */}
-        <div className="flex max-[380px]:flex-wrap max-[380px]:justify-center justify-between py-7 text-[14px] gap-5">
+        <div
+          className={`${
+            openNav ? "hidden" : "flex"
+          }  max-[380px]:flex-wrap max-[380px]:justify-center justify-between py-7 text-[14px] gap-5`}
+        >
           <div className="flex items-center gap-20 text-xs">
             <div className="">
               <Image src={logo} alt="" />
@@ -250,6 +254,7 @@ function Header() {
                 <p className="text-[11px] text-[#666]">CART</p>
                 <p className="font-bold">$1,689.00</p>
               </div>
+            </Link>
               {/* sidebar-button-start */}
               <div>
                 <button
@@ -280,7 +285,6 @@ function Header() {
                 </button>
               </div>
               {/* sidebar-button-end */}
-            </Link>
           </div>
         </div>
         {/* main header end */}

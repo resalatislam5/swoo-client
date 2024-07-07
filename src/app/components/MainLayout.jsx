@@ -4,9 +4,11 @@ import Search from "./Search";
 function MainLayout({ children }) {
   return (
     <main>
-      <Header />
-      <Search />
+      <div className="px-5">
+        <Header />
+        <Search />
       {children}
+      </div>
     </main>
   );
 }
