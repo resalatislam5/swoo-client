@@ -97,7 +97,7 @@ function Cart() {
     console.log("use effect");
   }, []);
   return (
-    <div className="container mx-auto bg-white p-10 rounded-xl my-5">
+    <div className="main-width bg-white p-10 rounded-xl my-5">
       <div className="grid lg:grid-cols-3 gap-8 items-end">
         {/* left */}
         <div className="lg:col-span-2 flex flex-col gap-5">

@@ -134,7 +134,7 @@ function Header() {
         </div>
       </>
       {/* side bar start */}
-      <section className="container mx-auto bg-white px-5 text-black md:pt-7 rounded-xl relative">
+      <section className="main-width bg-white px-5 text-black md:pt-7 rounded-xl relative">
         {/* top header start */}
         <div className="md:flex hidden flex-wrap md:justify-between gap-5 justify-center">
           <div className="flex items-center gap-5 text-xs">
@@ -195,7 +195,7 @@ function Header() {
                     )}
                   </Link>
                   {e?.arr && (
-                    <div className="dropdown-content left-0 absolute w-full pt-5 container">
+                    <div className="dropdown-content left-0 absolute w-full pt-5 main-width">
                       <div className="gap-3 bg-white shadow-md p-5 rounded-md border-t">
                         <div className="grid grid-cols-3 gap-6 max-w-6xl mx-auto">
                           {e.arr.map((items, i) => (
@@ -255,36 +255,36 @@ function Header() {
                 <p className="font-bold">$1,689.00</p>
               </div>
             </Link>
-              {/* sidebar-button-start */}
-              <div>
-                <button
-                  data-collapse-toggle="mobile-menu-2"
-                  type="button"
-                  className="inline-flex items-center p-2 ml-1 text-sm text-white bg-white rounded-lg xl:hidden  focus:outline-none focus:ring-2"
-                  aria-controls="mobile-menu-2"
-                  aria-expanded="true"
-                  onClick={() => setOpenNev(true)}
+            {/* sidebar-button-start */}
+            <div>
+              <button
+                data-collapse-toggle="mobile-menu-2"
+                type="button"
+                className="inline-flex items-center p-2 ml-1 text-sm text-white bg-white rounded-lg xl:hidden  focus:outline-none focus:ring-2"
+                aria-controls="mobile-menu-2"
+                aria-expanded="true"
+                onClick={() => setOpenNev(true)}
+              >
+                <span className="sr-only">Open main menu</span>
+                <svg
+                  className="w-6 h-6 text-black"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <span className="sr-only">Open main menu</span>
-                  <svg
-                    className="w-6 h-6 text-black"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"></path>
-                  </svg>
-                  <svg
-                    className="hidden w-6 h-6"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"></path>
-                  </svg>
-                </button>
-              </div>
-              {/* sidebar-button-end */}
+                  <path d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"></path>
+                </svg>
+                <svg
+                  className="hidden w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"></path>
+                </svg>
+              </button>
+            </div>
+            {/* sidebar-button-end */}
           </div>
         </div>
         {/* main header end */}

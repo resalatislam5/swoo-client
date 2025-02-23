@@ -7,6 +7,9 @@ body {
   font-size: 14px;
 }
 
+.main-width {
+  @apply max-w-[1520px] mx-auto;
+}
 /* slider button style end */
 .dropdown-content {
   display: none;

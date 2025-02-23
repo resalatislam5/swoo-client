@@ -30,7 +30,7 @@ function Search() {
     },
   ];
   return (
-    <div className="container mx-auto bg-[#1ABA1A] px-5 rounded-xl py-5">
+    <div className="main-width bg-[#1ABA1A] px-5 rounded-xl py-5">
       <div className="flex lg:flex-nowrap flex-wrap lg:justify-between justify-center items-center gap-5">
         <div className="bg-white py-2 px-5 rounded-xl flex sm:flex-nowrap flex-wrap justify-center">
           <select className="mr-2 font-bold" name="" id="">

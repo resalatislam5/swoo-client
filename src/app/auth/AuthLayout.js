@@ -18,7 +18,7 @@ function AuthLayout({
 }) {
   const [showP, setShowP] = useState(false);
   return (
-    <div className="container mx-auto bg-white rounded-xl my-5 py-10 text-[#666]">
+    <div className="main-width bg-white rounded-xl my-5 py-10 text-[#666]">
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-5">
         <div className="flex justify-center gap-5 items-center">
           <Image className="h-fit" src={loginImg} alt="" />
